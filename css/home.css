@@ -106,11 +106,10 @@ form .btn-info:hover{
 
   }
   .copyrights{
-  position: fixed;
   color:#1A454F;
-  margin-right: 15%;
   text-align: center;
-
+  position: absolute;
+  bottom: 0;
   }
   .copyrights p{
     color:#1A454F;
