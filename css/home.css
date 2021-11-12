@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Neo Sans Arabic m;
+  src: url(../fonts/NeoSansArabicMedium.woff);
+}
+@font-face {
+  font-family: Neo Sans Arabic l;
+  src: url(../fonts/NeoSansArabicLight.woff);
+}
+*{
+  margin: 0;
+  padding: 0;
+  color:#1A454F;
+  font-family: 'Neo Sans Arabic m';
+}
+body{
+  margin: 0;
+  padding: 0;
+  /* background: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size:cover; */
+  color:#1A454F;
+}
+
+p{
+  color: #1A454F;
+}
+.login-box{
+  background: white;
+  color: black;
+  width:100%;
+  height:100vh;
+  background: url('../img/home-background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+.login-box-left{
+width: 50%;
+padding: 20px;
+padding-top: 8%;
+margin-right:10%;
+height: 100vh;
+position: relative;
+
+}
+
+.logo-home{
+  width: 15%;
+  margin: 10px auto;
+}
+.logo-home img{
+  width: 100%;
+}
+
+form{
+  width: 70%;
+}
+label{
+  font-family: 'Neo Sans Arabic l';
+
+}
+.forgot-password span,a{
+  color:#23A8E1;
+  padding: 5px;
+  text-decoration: none;
+}
+.lang a{
+  text-decoration: none;
+}
+.lang i{
+  display: inline;
+}
+.lang p{
+  display: inline;
+  padding: 5px;
+}
+form .btn-info{
+  background-color: #23A8E1;
+  color: white;
+}
+form .btn-info:hover{
+  background-color: #23A8E1;
+  color: white;
+}
+.copyrights{
+  position: absolute;
+  bottom: 0;
+  margin-right: 30%;
+
+}
+.copyrights p{
+  color:white;
+}
+@media only screen and (max-width: 900px) {
+  .login-box-left{
+    width:100%;
+    padding-top: 20%;
+    margin-right:0%;
+  }
+  .login-box{
+    background: white;
+    color: black;
+    width:100%;
+    height:100vh;
+    background:none;
+
+  }
+  .copyrights{
+  position: fixed;
+  color:#1A454F;
+  margin-right: 15%;
+  text-align: center;
+
+  }
+  .copyrights p{
+    color:#1A454F;
+  }
+}
