@@ -38,7 +38,7 @@ background.style.background ="url('./img/home-background-2.png')";
 background.style.backgroundSize ="100% 100%";
 if(mediaQuery.matches){
   background.style.background ="none";
-  copyrightsC.style.paddingLeft = "10%";
+  copyrightsC.style.paddingLeft = "2%";
   copyrightsC.style.paddingRight = "0%";
 }
 }
@@ -62,7 +62,7 @@ background.style.backgroundSize ="100% 100%";
 if(mediaQuery.matches){
   background.style.background ="none";
   copyrightsC.style.paddingLeft = "0%";
-  copyrightsC.style.paddingRight = "15%";
+  copyrightsC.style.paddingRight = "10%";
 }
 
 
