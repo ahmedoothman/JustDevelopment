@@ -6,6 +6,7 @@ let passwordtitle = document.querySelector('#password-title');
 let forgetquestion = document.querySelector('#forget-question');
 let reset = document.querySelector('#reset');
 let loginbtn = document.querySelector('.login');
+let copyrights = document.querySelector('#copyrights');
 let lang = "ar";
 
 btnlang.addEventListener("click",function(){
@@ -26,6 +27,7 @@ passwordtitle.innerHTML ="password";
 forgetquestion.innerHTML = "Forget password?";
 reset.innerHTML ="Reset";
 loginbtn.innerHTML="Login";
+copyrights.innerHTML = "all copyrights are reserved.osol@2021";
 }
 
 function Arabic() {
@@ -37,4 +39,6 @@ passwordtitle.innerHTML ="كلمة المرور";
 forgetquestion.innerHTML = "نسيت كلمة السر؟";
 reset.innerHTML= "اعادة تعيين";
 loginbtn.innerHTML="تسجيل الدخول";
+copyrights.innerHTML = "جميع الحقوق محفوظة.اصول@2021";
+
 }
