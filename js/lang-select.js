@@ -1,3 +1,7 @@
+const mediaQuery = window.matchMedia('(max-width: 900px)');
+let lang = "ar";
+
+// Login page
 let form = document.querySelector('#form');
 let btnlang = document.querySelector('.langBtn');
 let title = document.querySelector('#title');
@@ -9,9 +13,8 @@ let loginbtn = document.querySelector('.login');
 let copyrightsC = document.querySelector('.copyrights');
 let copyrights = document.querySelector('#copyrights');
 let background = document.querySelector('.login-box');
-const mediaQuery = window.matchMedia('(max-width: 900px)');
-let lang = "ar";
 
+//listen to event from language btn
 btnlang.addEventListener("click",function(){
   console.log("btn clicked");
   if(lang == "ar"){
@@ -21,8 +24,10 @@ btnlang.addEventListener("click",function(){
   }
 });
 
+// the content in english
 function English() {
 lang = "en";
+// Login page
 document.body.style.direction="ltr";
 form.style.direction = "ltr";
 title.innerHTML = "عربي";
@@ -44,8 +49,10 @@ if(mediaQuery.matches){
 }
 }
 
+// the content in arabic
 function Arabic() {
 lang = "ar";
+// Login page
 document.body.style.direction="rtl";
 form.style.direction = "rtl";
 title.innerHTML = "English";

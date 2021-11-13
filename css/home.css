@@ -6,6 +6,7 @@
   font-family: Neo Sans Arabic l;
   src: url(../fonts/NeoSansArabicLight.woff);
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -15,15 +16,12 @@
 body{
   margin: 0;
   padding: 0;
-  /* background: url('../img/background.png');
-  background-repeat: no-repeat;
-  background-size:cover; */
   color:#1A454F;
 }
-
 p{
   color: #1A454F;
 }
+
 .login-box{
   background: white;
   color: black;
@@ -35,45 +33,47 @@ p{
   background-attachment: scroll;
   background-size: 100% 100%;
   overflow:auto;
-
-}
-.login-box-left{
-width: 50%;
-margin-right:10%;
-padding-top:8%;
-height: 100vh;
 }
 
+.login-box-content{
+  width: 50%;
+  margin-right:10%;
+  padding-top:8%;
+  height: 100vh;
+}
+/* logo style */
 .logo-home{
   width: 15%;
   margin: 10px auto;
-
 }
 .logo-home img{
   width: 100%;
 }
 
+/* form content style */
 form{
   width: 70%;
 }
 label{
   font-family: 'Neo Sans Arabic l';
-
 }
-.forgot-password #reset,a{
+form .form-control{
+  border-radius: 10px;
+}
+form .lang a{
+  text-decoration: none;
+}
+form .lang i{
+  display: inline;
+}
+form .lang p{
+  display: inline;
+  padding: 5px;
+}
+form .forgot-password #reset,a{
   color:#23A8E1;
   padding: 5px;
   text-decoration: none;
-}
-.lang a{
-  text-decoration: none;
-}
-.lang i{
-  display: inline;
-}
-.lang p{
-  display: inline;
-  padding: 5px;
 }
 form .btn{
   border-radius: 10px;
@@ -86,12 +86,8 @@ form .btn-info:hover{
   background-color: #23A8E1;
   color: white;
 }
-form .form-control{
-  border-radius: 10px;
-}
+/* copyrights */
 .copyrights{
-  margin-top:auto;
-  align-self: center;
   width: 100%;
   padding: 0;
   padding-right: 35%;
@@ -101,29 +97,30 @@ form .form-control{
   color:white;
   font-size: 13px;
 }
-@media only screen and (max-width: 900px) {
 
+/* responsive screen size */
+@media only screen and (max-width: 900px) {
   .login-box{
     background: white;
     color: black;
     width:100%;
-    /*background: url('../img/home-background-1.png');*/
     background: none;
 
   }
-  .login-box-left{
+  .login-box-content{
     width:100%;
     padding-top: 20%;
     margin-right:0%;
     height: 90vh;
   }
-  .copyrights{
-  color:#1A454F;
-  width: 100%;
-  padding-right: 5%;
-  align-self: center;
+ .copyrights{
+    color:#1A454F;
+    width: 100%;
+    padding-right: 5%;
+    align-self: center;
   }
   .copyrights p span{
     color:#1A454F;
   }
+
 }
