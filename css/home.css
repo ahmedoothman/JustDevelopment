@@ -114,6 +114,28 @@ form .btn-info:hover{
     margin-right:0%;
     height: 90vh;
   }
+  form .forgot-password #reset{
+    color:#23A8E1;
+    padding: 1px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  form .forgot-password #forget-question{
+    padding: 5px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  form .lang a{
+    text-decoration: none;
+  }
+  form .lang i{
+    display: inline;
+  }
+  form .lang p{
+    display: inline;
+    padding: 2px;
+    font-size: 14px;
+  }
  .copyrights{
     color:#1A454F;
     width: 100%;
