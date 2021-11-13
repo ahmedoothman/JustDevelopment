@@ -9,6 +9,7 @@ let loginbtn = document.querySelector('.login');
 let copyrightsC = document.querySelector('.copyrights');
 let copyrights = document.querySelector('#copyrights');
 let background = document.querySelector('.login-box');
+const mediaQuery = window.matchMedia('(max-width: 900px)');
 let lang = "ar";
 
 btnlang.addEventListener("click",function(){
@@ -35,6 +36,9 @@ copyrightsC.style.paddingLeft = "50%";
 copyrightsC.style.paddingRight = "0%";
 background.style.background ="url('../img/home-background-2.png')";
 background.style.backgroundSize ="100% 100%";
+if(mediaQuery.matches){
+  background.style.background ="none";
+}
 }
 
 function Arabic() {
@@ -53,7 +57,9 @@ copyrightsC.style.paddingRight = "35%";
 background.style.background ="url('../img/home-background-1.png')";
 background.style.backgroundSize ="100% 100%";
 
-
+if(mediaQuery.matches){
+  background.style.background ="none";
+}
 
 
 }

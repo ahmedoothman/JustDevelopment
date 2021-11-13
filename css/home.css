@@ -96,7 +96,8 @@ form .btn-info:hover{
     background: white;
     color: black;
     width:100%;
-    background:none;
+    /*background: url('../img/home-background-1.png');*/
+    background: none;
 
   }
   .login-box-left{
