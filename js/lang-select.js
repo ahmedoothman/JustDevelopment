@@ -36,6 +36,7 @@ copyrightsC.style.paddingLeft = "50%";
 copyrightsC.style.paddingRight = "0%";
 background.style.background ="url('./img/home-background-2.png')";
 background.style.backgroundSize ="100% 100%";
+background.style.height ="100%";
 if(mediaQuery.matches){
   background.style.background ="none";
   copyrightsC.style.paddingLeft = "2%";
@@ -58,6 +59,7 @@ copyrightsC.style.paddingLeft = "0%";
 copyrightsC.style.paddingRight = "35%";
 background.style.background ="url('./img/home-background-1.png')";
 background.style.backgroundSize ="100% 100%";
+background.style.height ="100%";
 
 if(mediaQuery.matches){
   background.style.background ="none";

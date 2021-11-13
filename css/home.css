@@ -31,8 +31,10 @@ p{
   height:100vh;
   background: url('../img/home-background-1.png');
   background-repeat: no-repeat;
+  background-position:bottom;
+  background-attachment: scroll;
   background-size: 100% 100%;
-
+  overflow:auto;
 
 }
 .login-box-left{
