@@ -6,7 +6,9 @@ let passwordtitle = document.querySelector('#password-title');
 let forgetquestion = document.querySelector('#forget-question');
 let reset = document.querySelector('#reset');
 let loginbtn = document.querySelector('.login');
+let copyrightsC = document.querySelector('.copyrights');
 let copyrights = document.querySelector('#copyrights');
+let background = document.querySelector('.login-box');
 let lang = "ar";
 
 btnlang.addEventListener("click",function(){
@@ -20,6 +22,7 @@ btnlang.addEventListener("click",function(){
 
 function English() {
 lang = "en";
+document.body.style.direction="ltr";
 form.style.direction = "ltr";
 title.innerHTML = "عربي";
 nametitle.innerHTML = "UserName";
@@ -28,10 +31,15 @@ forgetquestion.innerHTML = "Forget password?";
 reset.innerHTML ="Reset";
 loginbtn.innerHTML="Login";
 copyrights.innerHTML = "all copyrights are reserved.osol@2021";
+copyrightsC.style.paddingLeft = "40%";
+copyrightsC.style.paddingRight = "0%";
+background.style.background ="url('../img/home-background-2.png')";
+background.style.backgroundSize ="100% 100%";
 }
 
 function Arabic() {
 lang = "ar";
+document.body.style.direction="rtl";
 form.style.direction = "rtl";
 title.innerHTML = "English";
 nametitle.innerHTML = "اسم المستحدم";
@@ -40,5 +48,12 @@ forgetquestion.innerHTML = "نسيت كلمة السر؟";
 reset.innerHTML= "اعادة تعيين";
 loginbtn.innerHTML="تسجيل الدخول";
 copyrights.innerHTML = "جميع الحقوق محفوظة.اصول@2021";
+copyrightsC.style.paddingLeft = "0%";
+copyrightsC.style.paddingRight = "15%";
+background.style.background ="url('../img/home-background-1.png')";
+background.style.backgroundSize ="100% 100%";
+
+
+
 
 }
