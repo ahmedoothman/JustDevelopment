@@ -33,20 +33,19 @@ p{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
+
 }
 .login-box-left{
 width: 50%;
-padding: 20px;
-padding-top: 8%;
 margin-right:10%;
+padding-top:8%;
 height: 100vh;
-position: relative;
-
 }
 
 .logo-home{
   width: 15%;
   margin: 10px auto;
+
 }
 .logo-home img{
   width: 100%;
@@ -59,7 +58,7 @@ label{
   font-family: 'Neo Sans Arabic l';
 
 }
-.forgot-password span,a{
+.forgot-password #reset,a{
   color:#23A8E1;
   padding: 5px;
   text-decoration: none;
@@ -83,33 +82,34 @@ form .btn-info:hover{
   color: white;
 }
 .copyrights{
-  position: absolute;
-  bottom: 0;
-  margin-right: 30%;
-
-}
+  margin-top:auto;
+  align-self: center;
+  width: 60%;
+  padding-right: 15%
+ }
 .copyrights p{
   color:white;
 }
 @media only screen and (max-width: 900px) {
-  .login-box-left{
-    width:100%;
-    padding-top: 20%;
-    margin-right:0%;
-  }
+
   .login-box{
     background: white;
     color: black;
     width:100%;
-    height:100vh;
     background:none;
 
   }
+  .login-box-left{
+    width:100%;
+    padding-top: 20%;
+    margin-right:0%;
+    height: 90vh;
+  }
   .copyrights{
   color:#1A454F;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
+  width: 90%;
+  padding: 0;
+  align-self: center;
   }
   .copyrights p{
     color:#1A454F;
