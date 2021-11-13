@@ -62,7 +62,7 @@ background.style.backgroundSize ="100% 100%";
 if(mediaQuery.matches){
   background.style.background ="none";
   copyrightsC.style.paddingLeft = "0%";
-  copyrightsC.style.paddingRight = "10%";
+  copyrightsC.style.paddingRight = "5%";
 }
 
 
