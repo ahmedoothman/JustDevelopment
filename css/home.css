@@ -30,15 +30,14 @@ p{
   background: url('../img/home-background-1.png');
   background-repeat: no-repeat;
   background-position:bottom;
-  background-attachment: scroll;
-  background-size: cover;
+  background-size:cover;
   overflow:auto;
 }
 
 .login-box-content{
   width: 40%;
   margin-right:11%;
-  padding-top:18vh;
+  padding-top:12vh;
   height: 100vh;
 }
 /* logo style */
@@ -110,7 +109,7 @@ form .btn-info:hover{
   }
   .login-box-content{
     width:100%;
-    padding-top: 10vh;
+    padding-top: 8vh;
     margin-right:0%;
     height: 93vh;
   }
