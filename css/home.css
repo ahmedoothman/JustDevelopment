@@ -38,7 +38,7 @@ p{
 .login-box-content{
   width: 40%;
   margin-right:11%;
-  padding-top:5%;
+  padding-top:18vh;
   height: 100vh;
 }
 /* logo style */
@@ -110,9 +110,9 @@ form .btn-info:hover{
   }
   .login-box-content{
     width:100%;
-    padding-top: 20%;
+    padding-top: 10vh;
     margin-right:0%;
-    height: 90vh;
+    height: 93vh;
   }
   form .forgot-password #reset{
     color:#23A8E1;
