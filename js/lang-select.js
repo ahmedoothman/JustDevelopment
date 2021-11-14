@@ -13,6 +13,7 @@ let loginbtn = document.querySelector('.login');
 let copyrightsC = document.querySelector('.copyrights');
 let copyrights = document.querySelector('#copyrights');
 let background = document.querySelector('.login-box');
+let contlogin = document.querySelector('.login-box-content');
 
 //listen to event from language btn
 btnlang.addEventListener("click",function(){
@@ -42,6 +43,7 @@ copyrightsC.style.paddingRight = "0%";
 background.style.background ="url('./img/home-background-2.png')";
 background.style.backgroundSize ="100% 100%";
 background.style.height ="100%";
+contlogin.style.marginLeft = "15%";
 if(mediaQuery.matches){
   background.style.background ="none";
   copyrightsC.style.paddingLeft = "2%";
