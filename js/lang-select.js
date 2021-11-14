@@ -49,6 +49,8 @@ if(mediaQuery.matches){
   background.style.background ="none";
   copyrightsC.style.paddingLeft = "2%";
   copyrightsC.style.paddingRight = "0%";
+  contlogin.style.marginLeft = "0%";
+
 }
 }
 
