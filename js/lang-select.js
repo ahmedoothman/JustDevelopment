@@ -44,7 +44,7 @@ background.style.background ="url('./img/home-background-2.png')";
 background.style.backgroundSize ="cover";
 background.style.backgroundPosition ="bottom";
 background.style.height ="100%";
-contlogin.style.marginLeft = "15%";
+contlogin.style.marginLeft = "11%";
 if(mediaQuery.matches){
   background.style.background ="none";
   copyrightsC.style.paddingLeft = "2%";
