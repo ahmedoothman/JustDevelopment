@@ -37,7 +37,22 @@ li{
   /* height: 35px; */
   padding: 0;
 }
-
+.navbar-toggler:hover{
+background: none;
+}
+.navbar-toggler:active{
+background: none;
+}
+.navbar-toggler:focus{
+background: none;
+}
+.navbar-toggler-icon{
+  margin-top: 10px;
+}
+/* arrow down */
+.dropdown-toggle::after{
+  display: none;
+}
 .nav-link{
   padding: 2px;
   /* background: yellow; */
@@ -48,9 +63,14 @@ li{
 .nav-item:last-child{
   margin-left: 25px;
 }
+.dropdown-item:focus{
+  background: none;
+}
 .logo-osool{
   width: 70%
 }
+/**************/
+/* groups dropdown*/
 nav .groups{
   border: solid 1px rgba(26, 69, 79,0.2);
   border-radius:15px;
@@ -83,11 +103,12 @@ nav .groups .fa-caret-down{
   float: left;
   color: #23A8E1;
 }
-
-
-.dropdown-toggle::after{
-  display: none;
+.groupstitle{
+  display: inline;
+  color: rgba(26, 69, 79,0.5);
 }
+/******************/
+/* alert element notification */
 .alert-content{
   position: relative;
   margin: 0 10px;
@@ -105,18 +126,8 @@ top:0;
 .alert-index{
   z-index: -1;
 }
-.navbar-toggler:hover{
-background: none;
-}
-.navbar-toggler:active{
-background: none;
-}
-.navbar-toggler:focus{
-background: none;
-}
-.navbar-toggler-icon{
-  margin-top: 10px;
-}
+/****************/
+/* admin li content */
 nav .admin-content{
    border: solid 1px rgba(26, 69, 79,0.2);
   border-radius:10px;
@@ -151,12 +162,21 @@ nav .admin-content .fa-caret-down{
 .out{
     color: #E74C3C;
 }
-.out .fa-sign-out-alt{
+.admin-content .fa-sign-out-alt{
   color: #E74C3C;
+}
+.dropdown-item p{
+  font-size: 14px;
 }
 nav .icon-nav{
   padding-top:7px;
 }
+ .navbar-collapse{
+   flex-grow: 0;
+ }
+ /***************/
+ /* sidebar */
+
 @media only screen and (max-width: 900px) {
 nav .groups{
   padding: 5px;
