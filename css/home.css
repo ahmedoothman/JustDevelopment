@@ -17,19 +17,23 @@ body{
   margin: 0;
   padding: 0;
   color:#1A454F;
+  height: 100vh;
+  background-color: #23A8E1;
+
 }
 p{
   color: #1A454F;
 }
 .main{
   border: solid 5px white;
-  height: 100vh;
+  height: 90%;
+  width:80%;
 }
 .login-box{
   background: white;
   color: black;
   width:100%;
-  height:98.7vh;
+  height:100%;
   background: url('../img/home-background-1.png');
   background-repeat: no-repeat;
   background-position:bottom;
@@ -42,7 +46,7 @@ p{
   width: 40%;
   margin-right:11%;
   padding-top:12vh;
-  height: 97vh;
+  height: 100%;
 }
 /* logo style */
 .logo-home{
@@ -62,6 +66,23 @@ label{
 }
 form .form-control{
   border-radius: 10px;
+}
+.sect-col{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+}
+form .lang{
+
+}
+form .forgot-password p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 9px;
 }
 form .lang a{
   text-decoration: none;
@@ -104,18 +125,26 @@ form .btn-info:hover{
 
 /* responsive screen size */
 @media only screen and (max-width: 900px) {
+  body{
+    height:99vh;
+  }
+  .main{
+    border: solid 5px white;
+    height: 80%;
+    width:90%;
+  }
   .login-box{
     background: white;
     color: black;
     width:100%;
-    background: none;
+    background: white;
 
   }
   .login-box-content{
     width:100%;
     padding-top: 8vh;
     margin-right:0%;
-    height: 93vh;
+    height: 100%;
   }
   form .forgot-password #reset{
     color:#23A8E1;
@@ -128,6 +157,22 @@ form .btn-info:hover{
     font-size: 16px;
     text-decoration: none;
   }
+  .sect-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+  }
+  .forgot-password{
+    display: block;
+    width:100%;
+  }
+  .lang{
+    display: block;
+    width: 100%;
+    text-align: center;
+   }
   form .lang a{
     text-decoration: none;
   }

@@ -46,7 +46,7 @@ background.style.backgroundPosition ="bottom";
 background.style.height ="100%";
 contlogin.style.marginLeft = "11%";
 if(mediaQuery.matches){
-  background.style.background ="none";
+  background.style.background ="white";
   copyrightsC.style.paddingLeft = "2%";
   copyrightsC.style.paddingRight = "0%";
   contlogin.style.marginLeft = "0%";
@@ -76,7 +76,7 @@ background.style.backgroundPosition ="bottom";
 background.style.height ="100%";
 
 if(mediaQuery.matches){
-  background.style.background ="none";
+  background.style.background ="white";
   copyrightsC.style.paddingLeft = "0%";
   copyrightsC.style.paddingRight = "5%";
 }
