@@ -222,7 +222,7 @@ width:5vw;
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 10px;
   border-radius: 10px;
   transition: 0.3s;
@@ -231,7 +231,6 @@ width:5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
 }
