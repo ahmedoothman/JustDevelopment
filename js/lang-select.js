@@ -15,16 +15,6 @@ let copyrights = document.querySelector('#copyrights');
 let background = document.querySelector('.login-box');
 let contlogin = document.querySelector('.login-box-content');
 
-// navbar
-let btnlang_1 = document.querySelectorAll('.langBtn_1');
-let btnlang_2 = document.querySelectorAll('.langBtn_2');
-let groupsdroptitles = document.querySelector(".groupstitle");
-let groupsdropticon = document.querySelector(".fa-caret-down");
-let lastli = document.querySelector('.nav-item:last-child');
-let langtit = document.querySelector('.langtit');
-let changepasswordtit = document.querySelector('.change-password');
-let signout = document.querySelector('.out');
-
 //listen to event from language btn
 btnlang.addEventListener("click",function(){
   console.log("btn clicked");
@@ -34,26 +24,6 @@ btnlang.addEventListener("click",function(){
     Arabic();
   }
 });
-// listen to event from nav
-
-  btnlang_1.addEventListener("click",function(){
-    if(lang == "ar"){
-      English_nav();
-    }else{
-      Arabic_nav();
-    }
-    console.log("btn clicked " + lang);
-  });
-  btnlang_2.addEventListener("click",function(){
-    if(lang == "ar"){
-      English_nav();
-    }else{
-      Arabic_nav();
-    }
-    console.log("btn clicked " + lang);
-  });
-
-
 
 // login page the content in english
 function English() {
