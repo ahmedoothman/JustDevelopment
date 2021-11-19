@@ -80,31 +80,3 @@ if(mediaQuery.matches){
   copyrightsC.style.paddingRight = "5%";
 }
 }
-////////////////////////////
-//navbar
-
-function English_nav() {
-lang = "en";
-document.body.style.direction="ltr";
-
-groupsdroptitles.innerHTML ="groups";
-groupsdropticon.style.float = "right";
-langtit.innerHTML  = "Language";
-changepasswordtit.innerHTML  = "Change password";
-signout.innerHTML  = "Signout";
-
-lastli.style.marginLeft ="0";
-lastli.style.marginRight ="25px";
-}
-function Arabic_nav() {
-lang = "ar";
-document.body.style.direction="rtl";
-
-groupsdroptitles.innerHTML ="المجموعات";
-groupsdropticon.style.float = "left";
-langtit.innerHTML  = "اللغة";
-changepasswordtit.innerHTML  = "تغيير كلمة السر";
-signout.innerHTML  = "الخروج عن النظام";
-lastli.style.marginLeft ="25px";
-lastli.style.marginRight ="0px";
-}
