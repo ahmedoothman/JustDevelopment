@@ -1,199 +1,223 @@
 @font-face {
   font-family: Neo Sans Arabic m;
-  src: url(../fonts/NeoSansArabicMedium.woff);
+  src: url("../fonts/NeoSansArabicMedium.woff");
 }
 @font-face {
   font-family: Neo Sans Arabic l;
-  src: url(../fonts/NeoSansArabicLight.woff);
+  src: url("../fonts/NeoSansArabicLight.woff");
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-  color:#1A454F;
-  font-family: 'Neo Sans Arabic m';
+  color: #1a454f;
+  font-family: "Neo Sans Arabic m";
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
-  color:#1A454F;
+  color: #1a454f;
   height: 100vh;
-  background-color: #23A8E1;
+  background-color: #23a8e1;
+}
 
+p {
+  color: #1a454f;
 }
-p{
-  color: #1A454F;
-}
-.main{
+
+.main {
   border: solid 5px white;
   height: 90%;
-  width:80%;
-}
-.login-box{
-  background: white;
-  color: black;
-  width:100%;
-  height:100%;
-  background: url('../img/home-background-1.png');
-  background-repeat: no-repeat;
-  background-position:bottom;
-  background-size:cover;
-  border: solid 5px #23A8E1;
-  overflow:visible;
+  width: 80%;
 }
 
-.login-box-content{
+.login-box {
+  background: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background: url("../img/home-background-1.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  border: solid 5px #23a8e1;
+  overflow: visible;
+}
+
+.login-box-content {
   width: 40%;
-  margin-right:11%;
-  padding-top:12vh;
+  margin-right: 11%;
+  padding-top: 12vh;
   height: 100%;
 }
 /* logo style */
-.logo-home{
+.logo-home {
   width: 15%;
   margin: 10px auto;
 }
-.logo-home img{
+
+.logo-home img {
   width: 100%;
 }
-
 /* form content style */
-form{
+form {
   width: 70%;
 }
-label{
-  font-family: 'Neo Sans Arabic l';
+
+label {
+  font-family: "Neo Sans Arabic l";
 }
-form .form-control{
+
+form .form-control {
   border-radius: 10px;
 }
-.sect-col{
+
+.sect-col {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   flex-wrap: nowrap;
 }
-.forgot-password .optimize{
-  width:100%;
+
+.forgot-password .optimize {
+  width: 100%;
 }
-form .forgot-password p{
+
+form .forgot-password p {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 9px;
   font-size: 14px;
 }
-form .lang a{
+
+form .lang a {
   text-decoration: none;
-    font-size: 14px;
+  font-size: 14px;
 }
-form .lang i{
+
+form .lang i {
   display: inline;
 }
-form .lang p{
+
+form .lang p {
   display: inline;
   padding: 5px;
 }
 
-form .forgot-password #reset,a{
-  color:#23A8E1;
+a,
+form .forgot-password #reset {
+  color: #23a8e1;
   padding: 2px;
   text-decoration: none;
 }
-form .btn{
+
+form .btn {
   border-radius: 10px;
 }
-form .btn-info{
-  background-color: #23A8E1;
-  color: white;
-}
-form .btn-info:hover{
-  background-color: #23A8E1;
+
+form .btn-info {
+  background-color: #23a8e1;
   color: white;
 }
 
+form .btn-info:hover {
+  background-color: #23a8e1;
+  color: white;
+}
 /* copyrights */
-.copyrights{
+.copyrights {
   width: 100%;
-  padding: 0;
-  padding-right: 35%;
+  padding: 0 35% 0 0;
   height: 35px;
- }
-.copyrights p span{
-  color:white;
+}
+
+.copyrights p span {
+  color: white;
   font-size: 13px;
 }
-
 /* responsive screen size */
 @media only screen and (max-width: 900px) {
-  body{
-    height:99vh;
+  body {
+    height: 99vh;
   }
-  .main{
+
+  .main {
     border: solid 5px white;
     height: 80%;
-    width:90%;
+    width: 90%;
   }
-  .login-box{
+
+  .login-box {
     background: white;
     color: black;
-    width:100%;
+    width: 100%;
     background: white;
-
   }
-  .login-box-content{
-    width:100%;
+
+  .login-box-content {
+    width: 100%;
     padding-top: 8vh;
-    margin-right:0%;
+    margin-right: 0;
     height: 100%;
   }
-  form .forgot-password #reset{
-    color:#23A8E1;
+
+  form .forgot-password #reset {
+    color: #23a8e1;
     padding: 1px;
     font-size: 14px;
     text-decoration: none;
   }
-  form .forgot-password #forget-question{
+
+  form .forgot-password #forget-question {
     padding: 5px;
     font-size: 16px;
     text-decoration: none;
   }
-  .sect-col{
+
+  .sect-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-wrap: nowrap;
   }
-  .forgot-password{
+
+  .forgot-password {
     display: block;
-    width:100%;
+    width: 100%;
   }
-  .lang{
+
+  .lang {
     display: block;
     width: 100%;
     text-align: center;
-   }
-  form .lang a{
+  }
+
+  form .lang a {
     text-decoration: none;
   }
-  form .lang i{
+
+  form .lang i {
     display: inline;
   }
-  form .lang p{
+
+  form .lang p {
     display: inline;
     padding: 2px;
     font-size: 14px;
   }
- .copyrights{
-    color:#1A454F;
+
+  .copyrights {
+    color: #1a454f;
     width: 100%;
     padding-right: 5%;
     align-self: center;
   }
-  .copyrights p span{
-    color:#1A454F;
-  }
 
+  .copyrights p span {
+    color: #1a454f;
+  }
 }
