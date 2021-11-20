@@ -235,7 +235,7 @@ nav .icon-nav {
 }
 /***************/
 /* sidebar */
-
+/*****************/
 .sidebar-nav {
   background: rgb(35, 168, 225);
   background: linear-gradient(
@@ -272,7 +272,7 @@ nav .icon-nav {
   margin-bottom: 18px;
   padding: 10px;
   border-radius: 10px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .sidebar-nav.close li {
@@ -286,7 +286,9 @@ nav .icon-nav {
 .sidebar-nav .active {
   background: rgba(255, 255, 255, 0.2);
 }
-
+.sidebar-nav li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 .sidebar-nav li img {
   width: 28px;
   margin-left: 0;
@@ -301,14 +303,16 @@ nav .icon-nav {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   display: inline;
+  visibility: visible;
   margin-right: 10px;
-  transition: 0.3s;
+  /* transition: 1.5s; */
 }
 
 .sidebar-nav.close li p {
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  visibility: hidden;
   display: none;
   margin-right: 0;
 }
