@@ -248,6 +248,7 @@ nav .icon-nav {
   height: 100%;
   position: relative;
   transition: 0.4s;
+  overflow: hidden;
 }
 
 .sidebar-nav.close {
@@ -270,6 +271,7 @@ nav .icon-nav {
   justify-content: start;
   align-items: center;
   margin-bottom: 18px;
+  /* height: 50px; */
   padding: 10px;
   border-radius: 10px;
   transition: 0.4s;
@@ -296,25 +298,28 @@ nav .icon-nav {
 
 .sidebar-nav li a {
   text-decoration: none;
+  overflow: visible;
 }
 
-.sidebar-nav li p {
+.sidebar-nav li .opt {
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  display: inline;
-  visibility: visible;
+  display: flex;
+  opacity: 1;
   margin-right: 10px;
-  /* transition: 1.5s; */
+  transition: 0.4s;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-.sidebar-nav.close li p {
+.sidebar-nav.close li .opt {
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  visibility: hidden;
+  margin-right: 0px;
+  opacity: 0;
   display: none;
-  margin-right: 0;
 }
 
 .toggle-icon {
