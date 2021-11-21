@@ -489,23 +489,23 @@ nav .icon-nav {
     width: 100%;
   }
 
-  .sidebar-nav li p {
+  .sidebar-nav li .opt {
     padding-top: 5px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    margin-right: 0px;
+    opacity: 0;
     display: none;
-    margin-right: 0;
-    transition: 0.3s;
   }
 
-  .sidebar-nav.close li p {
+  .sidebar-nav.close li .opt {
     padding-top: 5px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    margin-right: 0px;
+    opacity: 0;
     display: none;
-    margin-right: 0;
   }
-
   .sidebar-nav li {
     display: flex;
     justify-content: center;
