@@ -243,6 +243,21 @@ nav .icon-nav {
   display: flex;
   justify-content: start;
 }
+.home-title {
+  width: 95%;
+  background: rgba(143, 206, 233, 1);
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-title h1 {
+  font-size: 25px;
+  color: white;
+}
+
 /***************/
 /* sidebar */
 /*****************/
@@ -286,9 +301,6 @@ nav .icon-nav {
   padding: 0.6rem;
   border-radius: 10px;
   transition: 0.4s;
-}
-li:last-child {
-  margin-bottom: 0;
 }
 
 .sidebar-nav.close li {
@@ -359,24 +371,6 @@ li:last-child {
   width: 95vw;
 }
 
-.home-title {
-  width: 95%;
-  background: rgb(35, 168, 225);
-  background: linear-gradient(
-    90deg,
-    rgba(35, 168, 225, 1) 18%,
-    rgba(143, 206, 233, 1) 78%
-  );
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.home-title h1 {
-  font-size: 25px;
-  color: white;
-}
-
 .show-content {
   width: 95%;
   margin: 20px auto;
@@ -423,6 +417,139 @@ li:last-child {
   width: 100%;
   height: auto;
 }
+/**********************/
+/* page content */
+/* group list page */
+.head-controller {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-controller-icon .opt-controller {
+  display: flex;
+  text-align: right;
+}
+.head-controller-icon .opt-controller b {
+  font-weight: 100;
+}
+.container-page {
+  width: 90%;
+  margin: 10px auto;
+}
+.container-page .search-groups {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-page .inputs-search-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container-page .search-groups ul {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 69, 79, 0.2);
+}
+.container-page .search-groups ul li {
+  width: 100%;
+}
+.container-page .search-groups .list-group-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: lighter;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.list-group-item:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.list-group-item input {
+  padding: 5px;
+  border: none;
+}
+.list-group-item input:focus {
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.list-group-item input:active {
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.list-group-item .date {
+  border: none;
+  text-align: center;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../img/date.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+.list-group-item .input-choose {
+  width: 100%;
+  text-align: center;
+}
+.list-group-item .input-choose .form-select {
+  border: none;
+  outline: none;
+}
+.list-group-item .input-choose .form-select:active {
+  border: none;
+  outline: none;
+}
+.list-group-item .input-choose .form-select:focus {
+  border: none;
+  outline: none;
+}
+.list-group-item .input-choose .form-select .opt-select:hover {
+  background: red;
+  border-radius: 15px;
+}
+.opt-select:first-child {
+  display: none;
+}
+.btn-search-group .btn {
+  margin: 10px;
+  padding: 10px 30px;
+}
+.btn-search-group b {
+  font-weight: 100;
+  border: none;
+}
+.btn-search-group .btn-primary {
+  background-color: #23a8e1;
+  border: none;
+}
+.btn-search-group .btn-primary b {
+  color: white;
+}
+.btn-search-group .btn-light {
+  background-color: white;
+  border: 1px solid #1a454f;
+}
+.btn-search-group .btn-light b {
+  color: #1a454f;
+}
 /***********/
 /*footer*/
 
@@ -447,6 +574,12 @@ li:last-child {
 /************************************/
 /* responsive */
 @media only screen and (max-width: 900px) {
+  .main {
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+  }
   nav .groups {
     padding: 5px;
   }
