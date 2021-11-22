@@ -23,8 +23,14 @@ body {
   margin: 0;
   padding: 0;
   color: #1a454f;
+  font-size: 16px;
 }
-
+.main {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 .nav-custom {
   height: 70px;
   background: white;
@@ -39,6 +45,9 @@ li {
   margin: 0;
   /* height: 35px; */
   padding: 0;
+}
+ul {
+  margin-bottom: 0;
 }
 
 .navbar-collapse {
@@ -229,7 +238,8 @@ nav .icon-nav {
 /* page */
 
 .content {
-  height: 85vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: start;
 }
@@ -245,6 +255,7 @@ nav .icon-nav {
   );
   width: 20vw;
   padding: 20px;
+  padding-bottom: 0;
   height: 100%;
   position: relative;
   transition: 0.4s;
@@ -259,6 +270,7 @@ nav .icon-nav {
   );
   width: 20vw;
   padding: 20px 10px;
+  padding-bottom: 0;
   height: 100%;
 }
 
@@ -270,11 +282,13 @@ nav .icon-nav {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 18px;
-  /* height: 50px; */
-  padding: 10px;
+  margin-bottom: 15px;
+  padding: 0.6rem;
   border-radius: 10px;
   transition: 0.4s;
+}
+li:last-child {
+  margin-bottom: 0;
 }
 
 .sidebar-nav.close li {
@@ -284,7 +298,6 @@ nav .icon-nav {
   padding: 10px;
   border-radius: 10px;
 }
-
 .sidebar-nav .active {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -325,6 +338,8 @@ nav .icon-nav {
 .toggle-icon {
   float: left;
 }
+
+/**********************/
 /* page content */
 /* home page */
 
@@ -332,6 +347,7 @@ nav .icon-nav {
   background: #f8f9fa;
   width: 80vw;
   display: flex;
+  height: auto;
   flex-direction: column;
   justify-content: start;
   text-align: start;
@@ -428,6 +444,8 @@ nav .icon-nav {
 .footer #copyrights {
   color: white;
 }
+/************************************/
+/* responsive */
 @media only screen and (max-width: 900px) {
   nav .groups {
     padding: 5px;
