@@ -26,10 +26,11 @@ body {
   font-size: 16px;
 }
 .main {
-  height: 100vh;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
+  /* background: yellow; */
+  height: 100vh;
 }
 .nav-custom {
   height: 70px;
@@ -565,6 +566,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
   /*transform: scaleX(-1);*/
 }
 

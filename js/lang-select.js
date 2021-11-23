@@ -40,7 +40,7 @@ function English() {
   copyrights.innerHTML = "all copyrights are reserved.osol@2021";
   copyrightsC.style.paddingLeft = "50%";
   copyrightsC.style.paddingRight = "0%";
-  background.style.background = "url('./img/home-background-2.png')";
+  background.style.background = "url('./img/background-2.svg')";
   background.style.backgroundSize = "cover";
   background.style.backgroundPosition = "bottom";
   background.style.height = "100%";
@@ -67,7 +67,7 @@ function Arabic() {
   copyrights.innerHTML = "جميع الحقوق محفوظة.اصول@2021";
   copyrightsC.style.paddingLeft = "0%";
   copyrightsC.style.paddingRight = "35%";
-  background.style.background = "url('./img/home-background-1.png')";
+  background.style.background = "url('./img/background-1.svg')";
   background.style.backgroundSize = "cover";
   background.style.backgroundPosition = "bottom";
 

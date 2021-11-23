@@ -27,7 +27,7 @@ p {
 }
 
 .main {
-  border: solid 5px white;
+  border: solid 5px #fffbfb;
   height: 90%;
   width: 80%;
 }
@@ -37,19 +37,23 @@ p {
   color: black;
   width: 100%;
   height: 100%;
-  background: url("../img/home-background-1.png");
+  background: url("../img/background-1.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   border: solid 5px #23a8e1;
-  overflow: visible;
+  overflow: hidden;
+  position: relative;
 }
-
 .login-box-content {
   width: 40%;
   margin-right: 11%;
   padding-top: 12vh;
   height: 100%;
+  position: absolute;
+  top: 0;
+
+  z-index: 999;
 }
 /* logo style */
 .logo-home {
@@ -71,6 +75,7 @@ label {
 
 form .form-control {
   border-radius: 10px;
+  background: #fffbfb;
 }
 
 .sect-col {
