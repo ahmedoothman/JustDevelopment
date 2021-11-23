@@ -181,6 +181,10 @@ form .btn-info:hover {
     font-size: 16px;
     text-decoration: none;
   }
+  form .form-control {
+    border-radius: 10px;
+    background: white;
+  }
 
   .sect-col {
     display: flex;
