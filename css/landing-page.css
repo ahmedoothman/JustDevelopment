@@ -6,10 +6,6 @@
   font-family: Neo Sans Arabic l;
   src: url("../fonts/NeoSansArabicLight.woff");
 }
-@font-face {
-  font-family: Neo Sans Arabic l;
-  src: url("../fonts/NeoSansArabicLight.woff");
-}
 
 * {
   margin: 0;
@@ -30,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background: yellow; */
-  height: 100vh;
+  height: 100%;
 }
 .nav-custom {
   height: 70px;
@@ -275,7 +271,8 @@ nav .icon-nav {
   height: 100%;
   position: relative;
   transition: 0.4s;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
 }
 
 .sidebar-nav.close {
@@ -293,13 +290,12 @@ nav .icon-nav {
 .sidebar.close {
   width: 5vw;
 }
-
 .sidebar-nav li {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 15px;
-  padding: 0.6rem;
+  margin-bottom: 12px;
+  padding: 10px;
   border-radius: 10px;
   transition: 0.4s;
 }
@@ -347,15 +343,24 @@ nav .icon-nav {
   opacity: 0;
   display: none;
 }
-
-.toggle-icon {
+.sidebar-nav .toggle-icon {
   float: left;
+  position: absolute;
+  /* left: 0px; */
+  right: 17vw;
+  transition: 0.4s;
+}
+.sidebar-nav.close .toggle-icon {
+  float: left;
+  position: absolute;
+  /* left: 0px; */
+  right: 2vw;
 }
 
 /**********************/
 /* page content */
 /* home page */
-
+/*********************/
 .main-content {
   background: #f8f9fa;
   width: 80vw;
@@ -421,6 +426,8 @@ nav .icon-nav {
 /**********************/
 /* page content */
 /* group list page */
+/**********************/
+
 .head-controller {
   display: flex;
   width: 25%;
@@ -435,7 +442,7 @@ nav .icon-nav {
   font-weight: 100;
 }
 .container-page {
-  width: 90%;
+  width: 95%;
   margin: 10px auto;
 }
 .container-page .search-groups {
@@ -492,19 +499,9 @@ nav .icon-nav {
   outline: none;
   border: none;
 }
-.list-group-item .date {
-  border: none;
-  text-align: center;
-}
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-  color: rgba(0, 0, 0, 0);
-  opacity: 1;
-  display: block;
-  background: url("../img/date.svg") no-repeat;
-  width: 20px;
-  height: 20px;
-  border-width: thin;
+.date {
+  width: 100px;
+  background: red;
 }
 .list-group-item .input-choose {
   width: 100%;
@@ -551,6 +548,84 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .btn-search-group .btn-light b {
   color: #1a454f;
 }
+/* table */
+.table-controllers {
+  margin: 20px 0;
+}
+.table {
+  background: white;
+}
+.table-controllers thead tr th {
+  font-weight: 100;
+  color: rgba(26, 69, 79, 0.6);
+}
+
+.table > :not(caption) > * > * {
+  padding: 15px;
+}
+.table-controllers tr {
+  border-bottom: 1px solid rgba(26, 69, 79, 0.2);
+}
+.status {
+  background: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.marked {
+  background: rgba(35, 168, 225, 0.1);
+}
+.marked .status {
+  background: url("../img/correct.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+input[type="checkbox"] {
+  outline: none;
+}
+input[type="checkbox"]:checked {
+  background: #23a8e1;
+  border: 1px solid #23a8e1;
+}
+input[type="checkbox"]:focus {
+  outline: none;
+}
+input[type="checkbox"]:active {
+  outline: none;
+}
+.controllers-table {
+  display: flex;
+  align-items: center;
+}
+.controllers-table .number-show {
+  width: 50%;
+  margin: 0 auto;
+}
+.controllers-table .number-show .form-select-number {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.controllers-table .number-show b {
+  font-weight: 100;
+}
+.last-btns {
+  margin-top: 10px;
+}
+.last-btns .btn-info {
+  background-color: #23a8e1;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  margin: 0 20px;
+}
+.last-btns .btn-light {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  color: rgba(26, 69, 79, 0.6);
+  border: 1px solid rgba(26, 69, 79, 0.6);
+}
 /***********/
 /*footer*/
 
@@ -567,10 +642,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
-  /*transform: scaleX(-1);*/
 }
 
 .footer #copyrights {

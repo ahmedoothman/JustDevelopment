@@ -216,16 +216,16 @@
                 <li class="list-group-item">
                   <input type="search" name="" value="" placeholder="بحث">
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item .date ">
                   <div class="from">من</div>
                   <div class="input-from">
-                    <input type="date" name="" value="2021-09-29" class="date">
+                    <input type="search" name="" value="" placeholder="">
                   </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item .date ">
                   <div class="to">الي</div>
                   <div class="input-to">
-                    <input type="date" name="" value="2021-09-29" placeholder="" class="date">
+                    <input type="search" name="" value="" placeholder="">
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -256,7 +256,87 @@
           </div>
           <!-- end of search group -->
           <div class="table-controllers">
+            <table class="table table-borderless">
+              <thead>
+                <tr class="table-head">
+                  <th scope="col"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault"></th>
+                  <th scope="col">المجموعات</th>
+                  <th scope="col">الاسم بالعربية</th>
+                  <th scope="col">الاسم بالانجليزية</th>
+                  <th scope="col">تعديل</th>
+                  <th scope="col">حالة التدقيق</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="marked">
+                  <th scope="row"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault" checked></th>
+                  <td>JustDevelopment</td>
+                  <td>البراعة والاتقان</td>
+                  <td>JustDevelopment</td>
+                  <td><img src="./img/edit.svg" alt=""></td>
+                  <td class="status">
 
+                  </td>
+                </tr>
+                <tr class="marked">
+                  <th scope="row"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault"></th>
+                  <td>Lahma Online</td>
+                  <td>شركة البراعة والاتقان للحوم</td>
+                  <td>Just for meat</td>
+                  <td><img src="./img/edit.svg" alt=""></td>
+                  <td class="status">
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault"></th>
+                  <td>JustDevelopment</td>
+                  <td>المجلس الاعلي</td>
+                  <td>HCD</td>
+                  <td><img src="./img/edit.svg" alt=""></td>
+                  <td class="status">
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault" checked></th>
+                  <td>Lahma Online</td>
+                  <td>وزارة التربية والتعليم</td>
+                  <td>MOE</td>
+                  <td><img src="./img/edit.svg" alt=""></td>
+                  <td class="status">
+
+                  </td>
+                </tr>
+                <tr class="marked">
+                  <th scope="row"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault"></th>
+                  <td>JustDevelopment</td>
+                  <td>شركة توصيل</td>
+                  <td>JustDevelopment</td>
+                  <td><img src="./img/edit.svg" alt=""></td>
+                  <td class="status">
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="controllers-table">
+              <img src="./img/delete.svg" alt="">
+              <div class="number-show">
+                <b class="show">عرض</b>
+                <select class="form-select-number" aria-label="Default select example">
+                  <option selected class="opt-select">5</option>
+                  <option value="1" class="opt-select">6</option>
+                  <option value="2" class="opt-select">7</option>
+                  <option value="3" class="opt-select">8</option>
+                </select>
+                <b class="show-rest">صفوف من 200 صف</b>
+              </div>
+            </div>
+            <div class="last-btns">
+              <button type="button" class="btn btn-info">حفظ</button>
+              <button type="button" class="btn btn-light"> رجوع الي القائمة</button>
+            </div>
           </div>
           <!-- end of tables -->
         </div>
@@ -265,14 +345,14 @@
       <!-- end of main content -->
     </div>
     <!-- end of content-->
-    <div class="footer">
-      <p></p>
-      <p class="footer-text">
-        <img src="./img/icon.png" />
-        <span id="copyrights">
-          جميع الحقوق محفوظة.اصول@2021</span>
-      </p>
-    </div>
+  </div>
+  <div class="footer">
+    <p></p>
+    <p class="footer-text">
+      <img src="./img/icon.png" />
+      <span id="copyrights">
+        جميع الحقوق محفوظة.اصول@2021</span>
+    </p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- language select js -->
