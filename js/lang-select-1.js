@@ -80,8 +80,9 @@ function English() {
     sidenav_opt[i].style.marginRight = "0px";
     sidenav_opt[i].style.marginLeft = "10px";
   }
-  arrow_1.style.float = "right";
-  arrow_1.style.right = "-3vw";
+
+  arrow_1.classList.add("english");
+
   footer.style.background =
     "linear-gradient(-90deg, rgba(35,168,225,1) 18%, rgba(143,206,233,1) 78%)";
   if (arrow_state == "right") {
@@ -126,8 +127,7 @@ function Arabic() {
     sidenav_opt[i].style.marginRight = "10px";
     sidenav_opt[i].style.marginLeft = "0px";
   }
-  arrow_1.style.float = "left";
-  arrow_1.style.right = "17vw";
+  arrow_1.classList.remove("english");
   footer.style.background =
     "linear-gradient(90deg, rgba(35,168,225,1) 18%, rgba(143,206,233,1) 78%)";
   if (arrow_state == "right") {

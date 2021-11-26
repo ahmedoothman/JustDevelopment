@@ -214,7 +214,7 @@
             <div class="inputs-search-group">
               <ul class="list-group list-group-horizontal-sm">
                 <li class="list-group-item">
-                  <input type="search" name="" value="" placeholder="بحث">
+                  <input type="search" name="" value="" class="search-holder" placeholder="بحث">
                 </li>
                 <li class="list-group-item .date ">
                   <div class="from">من</div>
@@ -231,10 +231,10 @@
                 <li class="list-group-item">
                   <div class="input-choose">
                     <select class="form-select" aria-label="Default select example">
-                      <option selected class="opt-select">اختر</option>
-                      <option value="1" class="opt-select">One</option>
-                      <option value="2" class="opt-select">Two</option>
-                      <option value="3" class="opt-select">Three</option>
+                      <option selected class="opt-select opt-t">اختر</option>
+                      <option value="1" class="opt-select opt-1">One</option>
+                      <option value="2" class="opt-select opt-2">Two</option>
+                      <option value="3" class="opt-select opt-3">Three</option>
                     </select>
                   </div>
                 </li>
@@ -244,7 +244,7 @@
             <div class="btn-search-group">
               <button type="button" class="btn btn-primary">
                 <img src="./img/search-w.svg" alt="">
-                <b class="btn-serch">بحث</b>
+                <b class="btn-search">بحث</b>
               </button>
 
               <button type="button" class="btn btn-light">
@@ -260,11 +260,11 @@
               <thead>
                 <tr class="table-head">
                   <th scope="col"> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault"></th>
-                  <th scope="col">المجموعات</th>
-                  <th scope="col">الاسم بالعربية</th>
-                  <th scope="col">الاسم بالانجليزية</th>
-                  <th scope="col">تعديل</th>
-                  <th scope="col">حالة التدقيق</th>
+                  <th scope="col" class="groups-box">المجموعات</th>
+                  <th scope="col" class="name-ar">الاسم بالعربية</th>
+                  <th scope="col" class="name-en">الاسم بالانجليزية</th>
+                  <th scope="col" class="edit-t">تعديل</th>
+                  <th scope="col" class="status-t">حالة التدقيق</th>
                 </tr>
               </thead>
               <tbody>
@@ -321,7 +321,7 @@
               </tbody>
             </table>
             <div class="controllers-table">
-              <img src="./img/delete.svg" alt="">
+              <a href="#"><img src="./img/delete.svg" alt=""></a>
               <div class="number-show">
                 <b class="show">عرض</b>
                 <select class="form-select-number" aria-label="Default select example">
@@ -334,8 +334,8 @@
               </div>
             </div>
             <div class="last-btns">
-              <button type="button" class="btn btn-info">حفظ</button>
-              <button type="button" class="btn btn-light"> رجوع الي القائمة</button>
+              <button type="button" class="btn btn-info save">حفظ</button>
+              <button type="button" class="btn btn-light back-to-home"> رجوع الي القائمة</button>
             </div>
           </div>
           <!-- end of tables -->
@@ -345,15 +345,16 @@
       <!-- end of main content -->
     </div>
     <!-- end of content-->
+    <div class="footer">
+      <p></p>
+      <p class="footer-text">
+        <img src="./img/icon.png" />
+        <span id="copyrights">
+          جميع الحقوق محفوظة.اصول@2021</span>
+      </p>
+    </div>
   </div>
-  <div class="footer">
-    <p></p>
-    <p class="footer-text">
-      <img src="./img/icon.png" />
-      <span id="copyrights">
-        جميع الحقوق محفوظة.اصول@2021</span>
-    </p>
-  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- language select js -->
   <script type="text/javascript" src="./js/lang-select-2.js"></script>

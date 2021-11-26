@@ -26,7 +26,22 @@ let osool = document.querySelector(".osool-title");
 let reports = document.querySelector(".reports");
 let settings = document.querySelector(".settings");
 let copyrights = document.querySelector("#copyrights");
-
+let report_problem = document.querySelector(".report-problem");
+let request_enhance = document.querySelector(".request-enhance");
+let search_holder = document.querySelector(".search-holder");
+let from = document.querySelector(".from");
+let to = document.querySelector(".to");
+let opt_t = document.querySelector(".opt-t");
+let btn_search = document.querySelector(".btn-search");
+let btn_clean = document.querySelector(".btn-clean");
+let name_ar = document.querySelector(".name-ar");
+let name_en = document.querySelector(".name-en");
+let edit_t = document.querySelector(".edit-t");
+let status = document.querySelector(".status-t");
+let show = document.querySelector(".show");
+let show_rest = document.querySelector(".show-rest");
+let save = document.querySelector(".save");
+let back_to_home = document.querySelector(".back-to-home");
 //listen to event
 btnlang_1.addEventListener("click", function() {
   console.log("btn clicked");
@@ -56,6 +71,7 @@ function English() {
   main_title.innerHTML = "Main page";
   main_title_side.innerHTML = "Main page";
   groups[0].innerHTML = "Groups";
+  groups[1].innerHTML = "Groups";
   alahad[0].innerHTML = "Alahd";
   users[0].innerHTML = "Users";
   sites.innerHTML = "Sites";
@@ -63,6 +79,22 @@ function English() {
   reports.innerHTML = "Reports";
   settings.innerHTML = "Settings";
   copyrights.innerHTML = "all copyrights are reserved.osol@2021";
+  report_problem.innerHTML = "Report a problem";
+  request_enhance.innerHTML = "Request enhancement";
+  search_holder.placeholder = "Search";
+  opt_t.innerHTML = "Choose";
+  from.innerHTML = "from";
+  to.innerHTML = "to";
+  btn_search.innerHTML = "Search";
+  btn_clean.innerHTML = "Clean";
+  name_ar.innerHTML = "Name in Arabic";
+  name_en.innerHTML = "Name in English";
+  edit_t.innerHTML = "Edit";
+  status.innerHTML = "Status";
+  show.innerHTML = "Show";
+  show_rest.innerHTML = "rows from 200 row";
+  save.innerHTML = "Save";
+  back_to_home.innerHTML = "Back to menu";
   lastli.style.marginLeft = "0";
   lastli.style.marginRight = "25px";
   for (var i = 0; i < sidenav_opt.length; i++) {
@@ -70,6 +102,7 @@ function English() {
     sidenav_opt[i].style.marginLeft = "10px";
   }
   arrow_1.style.float = "right";
+  arrow_1.style.right = "-3vw";
   footer.style.background =
     "linear-gradient(-90deg, rgba(35,168,225,1) 18%, rgba(143,206,233,1) 78%)";
   if (arrow_state == "right") {
@@ -101,6 +134,22 @@ function Arabic() {
   reports.innerHTML = "التقارير";
   settings.innerHTML = "الاعدادات";
   copyrights.innerHTML = "جميع الحقوق محفوظة.اصول@2021";
+  report_problem.innerHTML = "الابلاغ عن المشكلة؟";
+  request_enhance.innerHTML = "طلب تحسين";
+  search_holder.placeholder = "بحث";
+  opt_t.innerHTML = "اختر";
+  from.innerHTML = "من";
+  to.innerHTML = "الي";
+  btn_search.innerHTML = "بحث";
+  btn_clean.innerHTML = "تفريغ";
+  name_ar.innerHTML = "الاسم بالعربية";
+  name_en.innerHTML = "الاسم بالانجليزية";
+  edit_t.innerHTML = "تعديل";
+  status.innerHTML = "حالة التدقيق";
+  show.innerHTML = "عرض";
+  show_rest.innerHTML = "صفوف من 200 صف";
+  save.innerHTML = "حفظ";
+  back_to_home.innerHTML = "رجوع الي القائمة";
   lastli.style.marginLeft = "25px";
   lastli.style.marginRight = "0px";
   for (var i = 0; i < sidenav_opt.length; i++) {
@@ -108,6 +157,7 @@ function Arabic() {
     sidenav_opt[i].style.marginLeft = "0px";
   }
   arrow_1.style.float = "left";
+  arrow_1.style.right = "17vw";
   footer.style.background =
     "linear-gradient(90deg, rgba(35,168,225,1) 18%, rgba(143,206,233,1) 78%)";
   if (arrow_state == "right") {

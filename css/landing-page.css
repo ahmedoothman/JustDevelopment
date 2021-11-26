@@ -25,8 +25,8 @@ body {
   overflow: visible;
   display: flex;
   flex-direction: column;
-  /* background: yellow; */
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 .nav-custom {
   height: 70px;
@@ -233,12 +233,13 @@ nav .icon-nav {
 }
 /*****************/
 /* page */
-
+/**********************/
 .content {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: start;
+  /* padding-bottom: 20px; */
 }
 .home-title {
   width: 95%;
@@ -346,6 +347,7 @@ nav .icon-nav {
 .sidebar-nav .toggle-icon {
   float: left;
   position: absolute;
+  cursor: pointer;
   /* left: 0px; */
   right: 17vw;
   transition: 0.4s;
@@ -356,6 +358,20 @@ nav .icon-nav {
   /* left: 0px; */
   right: 2vw;
 }
+.sidebar-nav .english {
+  float: right;
+  position: absolute;
+  /* left: 0px; */
+  left: 17vw;
+  transition: 0.4s;
+}
+.sidebar-nav.close .english {
+  float: right;
+  position: absolute;
+  /* left: 0px; */
+  left: 2vw;
+  transition: 0.4s;
+}
 
 /**********************/
 /* page content */
@@ -365,7 +381,7 @@ nav .icon-nav {
   background: #f8f9fa;
   width: 80vw;
   display: flex;
-  height: auto;
+  height: 100%;
   flex-direction: column;
   justify-content: start;
   text-align: start;
@@ -382,6 +398,8 @@ nav .icon-nav {
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 195px;
+  height: 100%;
 }
 
 .show-content-box {
@@ -598,7 +616,7 @@ input[type="checkbox"]:active {
   align-items: center;
 }
 .controllers-table .number-show {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
 }
 .controllers-table .number-show .form-select-number {
@@ -611,6 +629,7 @@ input[type="checkbox"]:active {
 }
 .last-btns {
   margin-top: 10px;
+  margin-bottom: 5%;
 }
 .last-btns .btn-info {
   background-color: #23a8e1;
@@ -685,6 +704,22 @@ input[type="checkbox"]:active {
     display: flex;
     justify-content: start;
   }
+  .home-title {
+    width: 95%;
+    background: rgba(143, 206, 233, 1);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-title h1 {
+    font-size: 15px;
+    color: white;
+    padding-top: 7px;
+  }
   /* side nav */
   .sidebar-nav {
     background: linear-gradient(
@@ -753,5 +788,85 @@ input[type="checkbox"]:active {
 
   .toggle-icon {
     display: none;
+  }
+  .head-controller {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head-controller-icon .opt-controller {
+    display: flex;
+    text-align: right;
+  }
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-left: 40%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 42%;
+    padding-right: 5px;
+    white-space: nowrap;
+  }
+  .controllers-table {
+    display: flex;
+    align-items: center;
+  }
+  .controllers-table .number-show {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .controllers-table .number-show .form-select-number {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .controllers-table .number-show b {
+    font-weight: 100;
+  }
+  .last-btns {
+    margin-top: 10px;
+    margin-bottom: 5%;
+  }
+  .last-btns .btn-info {
+    background-color: #23a8e1;
+    color: white;
+    padding: 10px;
+    width: 80px;
+    margin: 0 20px;
+  }
+  .last-btns .btn-light {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    color: rgba(26, 69, 79, 0.6);
+    border: 1px solid rgba(26, 69, 79, 0.6);
   }
 }
