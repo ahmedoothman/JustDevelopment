@@ -328,7 +328,7 @@ nav .icon-nav {
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  display: flex;
+  display: inline;
   opacity: 1;
   margin-right: 10px;
   transition: 0.4s;
@@ -573,6 +573,9 @@ nav .icon-nav {
 .table {
   background: white;
 }
+.table img {
+  cursor: pointer;
+}
 .table-controllers thead tr th {
   font-weight: 100;
   color: rgba(26, 69, 79, 0.6);
@@ -584,10 +587,14 @@ nav .icon-nav {
 .table-controllers tr {
   border-bottom: 1px solid rgba(26, 69, 79, 0.2);
 }
+.status-t {
+  text-align: center;
+}
 .status {
   background: url("../img/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
   cursor: pointer;
 }
 .marked {
@@ -644,6 +651,52 @@ input[type="checkbox"]:active {
   padding: 10px;
   color: rgba(26, 69, 79, 0.6);
   border: 1px solid rgba(26, 69, 79, 0.6);
+}
+/***************************/
+/* Group details page */
+/***************************/
+.group-details-content {
+  padding: 25px;
+  min-height: 70vh;
+  height: 100%;
+}
+form .name-groups,
+.no-company {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form label {
+  font-weight: 100;
+  color: rgba(26, 69, 79, 0.7);
+  margin-bottom: 10px;
+}
+form .name-groups div,
+.no-company div {
+  width: 48%;
+  margin: 30px 0;
+}
+.accordion-button {
+  text-decoration: none;
+  background: #23a8e1;
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+  background: #23a8e1;
+}
+
+.accordion-button:focus {
+  border-color: #23a8e1;
+}
+.accordion-button:after {
+  background-image: url("../img/arrow-up.svg") !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.en:after {
+  margin-right: 0 !important;
+  margin-left: auto !important;
 }
 /***********/
 /*footer*/
@@ -799,7 +852,6 @@ input[type="checkbox"]:active {
     display: flex;
     text-align: right;
   }
-  /* Force table to not be like tables anymore */
   table,
   thead,
   tbody,
@@ -868,5 +920,21 @@ input[type="checkbox"]:active {
     padding: 10px;
     color: rgba(26, 69, 79, 0.6);
     border: 1px solid rgba(26, 69, 79, 0.6);
+  }
+  form .name-groups,
+  .no-company {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  form label {
+    font-weight: 100;
+    color: rgba(26, 69, 79, 0.7);
+    margin-bottom: 10px;
+  }
+  form .name-groups div,
+  .no-company div {
+    width: 100%;
+    margin: 30px 0;
   }
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Main Page</title>
+  <title>Group Details</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
@@ -140,7 +140,7 @@
           <li>
             <a href="group.html">
               <img src="./img/groups.svg" alt="" />
-              <h6 class="opt groups-box">المجموعات</h6>
+              <h6 class="opt groups-box" href="group.html">المجموعات</h6>
             </a>
           </li>
           <li>
@@ -179,80 +179,43 @@
       <div class="main-content close" id="page-content-wrapper">
         <!-- title -->
         <div class="home-title">
-          <h1 class="home-title-sub">الصفحة الرئيسية</h1>
+          <h1 class="home-title-sub">تفاصيل المجموعة</h1>
         </div>
         <!-- container of boxes -->
-        <div class="show-content">
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="no-sites">عدد المواقع</h5>
-              <h1>64</h1>
+        <div class="group-details-content">
+          <form action="">
+            <div class="name-groups">
+              <div>
+                <label for="ar-nm" class="name-ar">الاسم بالعربية</label><br>
+                <input type="text" class="name-in-arabic form-control" name="" value="" id="ar-nm">
+              </div>
+              <div>
+                <label for="en-nm" class="name-en">الاسم بالانجليزية</label><br>
+                <input type="text" class="name-in-english form-control" name="" value="" id="en-nm">
+              </div>
             </div>
-            <div class="show-content-icon">
-              <img src="./img/locations-b.svg" alt="" />
+            <div class="email-groups">
+              <label for="em-nm" class="em-nm">البريد الالكتروني</label>
+              <input type="text" class="email form-control" name="" value="" id="em-nm">
             </div>
-          </div>
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="groups-box">المجموعات</h5>
-              <h1>56</h1>
+            <div class="no-company">
+              <div>
+                <label for="no-cmr" class="no-cmr">عدد الشركات المطلوبة</label><br>
+                <input type="text" class="name-in-arabic form-control" name="" value="" id="no-cmr">
+              </div>
+
+              <div>
+                <label for="no-cme" class="no-cme">عدد الشركات الفعلية</label><br>
+                <input type="text" class="name-in-english form-control" name="" value="" id="no-cme">
+              </div>
+
             </div>
-            <div class="show-content-icon">
-              <img src="./img/groups-b.svg" alt="" />
-            </div>
-          </div>
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="main-items">الاصناف الرئيسية</h5>
-              <h1>32</h1>
-            </div>
-            <div class="show-content-icon">
-              <img src="./img/main-clasi-b.svg" alt="" />
-            </div>
-          </div>
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="sub-categories">الاصناف الفرعية</h5>
-              <h1>48</h1>
-            </div>
-            <div class="show-content-icon">
-              <img src="./img/list-b.svg" alt="" />
-            </div>
-          </div>
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="osool-collections">مجموع الاصول</h5>
-              <h1>80</h1>
-            </div>
-            <div class="show-content-icon">
-              <img src="./img/osool-icon-b.svg" alt="" />
-            </div>
-          </div>
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="alahad">العهد</h5>
-              <h1>40</h1>
-            </div>
-            <div class="show-content-icon">
-              <img src="./img/3ahd-b.svg" alt="" />
-            </div>
-          </div>
-          <!-- -->
-          <div class="show-content-box">
-            <div class="show-content-title">
-              <h5 class="users">المستخدمين</h5>
-              <h1>72</h1>
-            </div>
-            <div class="show-content-icon">
-              <img src="./img/users-b.svg" alt="" />
-            </div>
-          </div>
+          </form>
+
+        </div>
+        <div class="last-btns">
+          <button type="button" class="btn btn-info save">حفظ</button>
+          <button type="button" class="btn btn-light back-to-home"> رجوع الي القائمة</button>
         </div>
       </div>
     </div>
@@ -268,7 +231,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- language select js -->
-  <script type="text/javascript" src="./js/lang-select-1.js"></script>
+  <script type="text/javascript" src="./js/lang-select-3.js"></script>
 </body>
 
 </html>
