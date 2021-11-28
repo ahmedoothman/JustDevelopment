@@ -560,7 +560,7 @@ nav .icon-nav {
   border: none;
 }
 .btn-search-group .btn-primary:hover {
-  background-color: #017e95;
+  background-color: #03ccf1;
   border: none;
 }
 .btn-search-group .btn-primary b {
@@ -659,8 +659,8 @@ input[type="checkbox"]:active {
   transition: 0.3s;
 }
 .last-btns .btn-info:hover {
-  background-color: #017e95;
-  border: 1px solid #017e95;
+  background-color: #03ccf1;
+  border: 1px solid #03ccf1;
   color: white;
   padding: 10px;
   width: 80px;
