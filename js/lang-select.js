@@ -1,4 +1,5 @@
 const mediaQuery = window.matchMedia("(max-width: 900px)");
+localStorage.setItem("lang", "ar");
 let lang = "ar";
 
 // Login page
@@ -51,6 +52,7 @@ function English() {
     copyrightsC.style.paddingRight = "0%";
     contlogin.style.marginLeft = "0%";
   }
+  localStorage.setItem("lang", "en");
 }
 //login page the content in arabic
 function Arabic() {
@@ -78,4 +80,5 @@ function Arabic() {
     copyrightsC.style.paddingLeft = "0%";
     copyrightsC.style.paddingRight = "5%";
   }
+  localStorage.setItem("lang", "ar");
 }

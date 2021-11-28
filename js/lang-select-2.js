@@ -1,5 +1,13 @@
 const mediaQuery = window.matchMedia("(max-width: 900px)");
-let lang = "ar";
+let lang = localStorage.getItem("lang");
+console.log(lang);
+function langCheck() {
+  if (lang == "en") {
+    English();
+  } else {
+    Arabic();
+  }
+}
 let arrow_state = "right";
 //navbar
 let btnlang_1 = document.querySelector(".langBtn_1");
@@ -26,6 +34,7 @@ let osool = document.querySelector(".osool-title");
 let reports = document.querySelector(".reports");
 let settings = document.querySelector(".settings");
 let copyrights = document.querySelector("#copyrights");
+let align_opt = document.querySelector(".opt-controller");
 let report_problem = document.querySelector(".report-problem");
 let request_enhance = document.querySelector(".request-enhance");
 let search_holder = document.querySelector(".search-holder");
@@ -97,6 +106,7 @@ function English() {
   back_to_home.innerHTML = "Back to menu";
   lastli.style.marginLeft = "0";
   lastli.style.marginRight = "25px";
+  align_opt.style.textAlign = "left";
   for (var i = 0; i < sidenav_opt.length; i++) {
     sidenav_opt[i].style.marginRight = "0px";
     sidenav_opt[i].style.marginLeft = "10px";
@@ -111,6 +121,7 @@ function English() {
     arrow_1.src = "./img/arrow-right.png";
     arrow_state = "right";
   }
+  localStorage.setItem("lang", "en");
 }
 /////////////////////////////////////////////////////////////////
 
@@ -152,6 +163,8 @@ function Arabic() {
   back_to_home.innerHTML = "رجوع الي القائمة";
   lastli.style.marginLeft = "25px";
   lastli.style.marginRight = "0px";
+  align_opt.style.textAlign = "right";
+
   for (var i = 0; i < sidenav_opt.length; i++) {
     sidenav_opt[i].style.marginRight = "10px";
     sidenav_opt[i].style.marginLeft = "0px";
@@ -166,6 +179,7 @@ function Arabic() {
     arrow_1.src = "./img/arrow-right.png";
     arrow_state = "right";
   }
+  localStorage.setItem("lang", "ar");
 }
 
 /////////////////////////

@@ -1,5 +1,13 @@
 const mediaQuery = window.matchMedia("(max-width: 900px)");
-let lang = "ar";
+let lang = localStorage.getItem("lang");
+console.log(lang);
+function langCheck() {
+  if (lang == "en") {
+    English();
+  } else {
+    Arabic();
+  }
+}
 let arrow_state = "right";
 //navbar
 let btnlang_1 = document.querySelector(".langBtn_1");
@@ -92,6 +100,7 @@ function English() {
     arrow_1.src = "./img/arrow-right.png";
     arrow_state = "right";
   }
+  localStorage.setItem("lang", "en");
 }
 /////////////////////////////////////////////////////////////////
 
@@ -137,6 +146,7 @@ function Arabic() {
     arrow_1.src = "./img/arrow-right.png";
     arrow_state = "right";
   }
+  localStorage.setItem("lang", "ar");
 }
 /////////////////////////
 // sidebar responsive

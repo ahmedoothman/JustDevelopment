@@ -396,12 +396,14 @@ nav .icon-nav {
 .show-content {
   width: 95%;
   margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 195px;
+  min-height: 71vh;
   height: 100%;
 }
-
+.contain-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .show-content-box {
   background: white;
   padding: 10px;
@@ -554,6 +556,11 @@ nav .icon-nav {
 }
 .btn-search-group .btn-primary {
   background-color: #23a8e1;
+  transition: 0.3s;
+  border: none;
+}
+.btn-search-group .btn-primary:hover {
+  background-color: #017e95;
   border: none;
 }
 .btn-search-group .btn-primary b {
@@ -561,6 +568,11 @@ nav .icon-nav {
 }
 .btn-search-group .btn-light {
   background-color: white;
+  border: 1px solid #1a454f;
+  transition: 0.3s;
+}
+.btn-search-group .btn-light:hover {
+  background-color: #f4f4f4;
   border: 1px solid #1a454f;
 }
 .btn-search-group .btn-light b {
@@ -644,9 +656,26 @@ input[type="checkbox"]:active {
   padding: 10px;
   width: 80px;
   margin: 0 20px;
+  transition: 0.3s;
+}
+.last-btns .btn-info:hover {
+  background-color: #017e95;
+  border: 1px solid #017e95;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  margin: 0 20px;
 }
 .last-btns .btn-light {
   background-color: transparent;
+  color: white;
+  padding: 10px;
+  color: rgba(26, 69, 79, 0.6);
+  border: 1px solid rgba(26, 69, 79, 0.6);
+}
+.last-btns .btn-light:hover {
+  background-color: #f4f4f4;
+  border: 1px solid #1a454f;
   color: white;
   padding: 10px;
   color: rgba(26, 69, 79, 0.6);

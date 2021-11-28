@@ -1,5 +1,13 @@
 const mediaQuery = window.matchMedia("(max-width: 900px)");
-let lang = "ar";
+let lang = localStorage.getItem("lang");
+console.log(lang);
+function langCheck() {
+  if (lang == "en") {
+    English();
+  } else {
+    Arabic();
+  }
+}
 let arrow_state = "right";
 //navbar
 let btnlang_1 = document.querySelector(".langBtn_1");
@@ -54,6 +62,7 @@ btnlang_2.addEventListener("click", function() {
 
 function English() {
   lang = "en";
+  localStorage.setItem("lang", "en");
   document.body.style.direction = "ltr";
   groupsdroptitles.innerHTML = "groups";
   groupsdropticon.style.float = "right";
@@ -99,8 +108,9 @@ function English() {
 
 function Arabic() {
   lang = "ar";
-  document.body.style.direction = "rtl";
+  localStorage.setItem("lang", "ar");
 
+  document.body.style.direction = "rtl";
   groupsdroptitles.innerHTML = "المجموعة";
   groupsdropticon.style.float = "left";
   langtit.innerHTML = "اللغة";
