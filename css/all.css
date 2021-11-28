@@ -295,10 +295,13 @@ nav .icon-nav {
   display: flex;
   justify-content: start;
   align-items: center;
+  flex-wrap: nowrap;
   margin-bottom: 12px;
   padding: 10px;
   border-radius: 10px;
   transition: 0.4s;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .sidebar-nav.close li {
@@ -328,8 +331,7 @@ nav .icon-nav {
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  display: inline;
-  opacity: 1;
+  display: inline-block;
   margin-right: 10px;
   transition: 0.4s;
   cursor: pointer;
