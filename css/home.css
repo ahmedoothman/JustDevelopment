@@ -1,17 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @font-face {
   font-family: Neo Sans Arabic m;
-  src: url("../fonts/NeoSansArabicMedium.woff");
+  src: url("../fonts/Droid-Sans-Arabic.ttf");
 }
 @font-face {
   font-family: Neo Sans Arabic l;
-  src: url("../fonts/NeoSansArabicLight.woff");
+  src: url("../fonts/Droid-Sans-Arabic.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
   color: #1a454f;
-  font-family: "Neo Sans Arabic m";
+  font-family: "Neo Sans Arabic m", "Roboto";
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   color: #1a454f;
   height: 100vh;
   background-color: #23a8e1;
+  font-family: "Neo Sans Arabic m", "Roboto";
 }
 
 p {
@@ -70,7 +72,7 @@ form {
 }
 
 label {
-  font-family: "Neo Sans Arabic l";
+  font-family: "Neo Sans Arabic l", "Roboto";
 }
 
 form .form-control {

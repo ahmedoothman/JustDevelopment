@@ -61,7 +61,7 @@ function Arabic() {
   document.body.style.direction = "rtl";
   form.style.direction = "rtl";
   title.innerHTML = "English";
-  nametitle.innerHTML = "اسم المستحدم";
+  nametitle.innerHTML = "اسم المستخدم";
   passwordtitle.innerHTML = "كلمة المرور";
   forgetquestion.innerHTML = "نسيت كلمة السر؟";
   reset.innerHTML = "اعادة تعيين";
